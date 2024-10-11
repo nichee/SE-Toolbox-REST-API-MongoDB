@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Home = () => {
   return (
-    <div classsName="flex justify-center">
+    <div>
       <InputButton />
       <div className="bg-green-200 flex justify-center pt-8">
         <AddressCardList />

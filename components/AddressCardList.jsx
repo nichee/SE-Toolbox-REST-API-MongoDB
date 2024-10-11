@@ -5,11 +5,8 @@ import axios from 'axios';
 
 
 
-
-
 const AddressCardList = () => {  // Define the functional component
-  const [addresses, setAddresses] = useState([]); // Move useState here
-
+  const [addresses, setAddresses] = useState([]); 
  useEffect(() => {
   const fetchAddresses = async () => {
     try {

@@ -19,6 +19,7 @@ const AddressCard = (props) => {
     }
   }
   const onSubmit = async (e) => {
+    e.preventDefault();  // important!!
     try {
       const data = {
         title: title,
@@ -64,7 +65,7 @@ const AddressCard = (props) => {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
             />
-            <button type="submit">Save</button>  
+            <button onClick={() => console.log({title, description})}type="submit">Save</button>  
  
           </form>  
         )}
